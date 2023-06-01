@@ -44,7 +44,7 @@ def predict():
     prediction = model.predict(inp_fea)
     output = round(prediction[0],2)
 
-    return render_template('index.html',prediction_text = "The price of this car should be {} Millions :".format(output))
+    return render_template('index.html',prediction_text = "The price of this car should be {} Millions".format(output))
     # return render_template('index.html',prediction_text = "{}".format(inp_fea))
 
 
